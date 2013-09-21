@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Тестовый сайт</title>
+<script type="text/javascript" src="kendo/js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="kendo/js/kendo.all.min.js"></script>
+<link href="kendo/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="kendo/styles/kendo.default.min.css" rel="stylesheet" />
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+
+
+
+        .container-narrow {
+            margin: 0 auto;
+            max-width: 700px;
+        }
+        .container-narrow > hr {
+            margin: 30px 0;
+        }
+
+
+        .jumbotron {
+            margin: 60px 0;
+            text-align: center;
+        }
+        .jumbotron h1 {
+            font-size: 72px;
+            line-height: 1;
+        }
+        .jumbotron .btn {
+            font-size: 21px;
+            padding: 14px 24px;
+        }
+
+
+
+        .marketing p + h4 {
+            margin-top: 28px;
+        }
+    </style>
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div id="example" >
+       <div id="menu" class="container container-fluid" style="display: none">
+            <div class="navbar-fixed-top">
+               <div class="navbar-inner">
+                   <a  class="brand">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                   <button id="button" class="k-button" rel="popover" title="Подсказка" data-content="Начните просматривать графики с нажатия этой кнопки." data-placement="bottom">Метод ломанных</button>
+                   <button id="button2" class="k-button">Усовершенствованный метод ломанных</button>
+                   <button id="button3" class="k-button">Метод Коши-Эйлера</button>
+                   <span id="undo"  class="k-button">Графики погрешностей</span>
+               </div>
+            </div>
+       </div>
+
+    <div class="jumbotron">
+        <h1>Постройка графиков</h1>
+        <p class="lead container">После нажатия на кнопку "Начать" появится меню с возможностью построить график методом Эйлера, усовершенствованным методом Эйлера и методом Эйлера Коши, а также посмотреть абсолютные и локальные погрешности данных методов. </p>
+        <a id="buttongo" class="btn btn-large btn-success">Начать</a>
+    </div>
+
+    <div id="window"  style="display:none">
+        <center> <h1>Абсолютная погрешность</h1>  </center>
+        <div class="row-fluid">
+            <div class="span6">
+                <div id="chart4"></div>
+
+            </div>
+            <div class="span6">
+                <div id="grid4" style="height: 380px"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr>
+       <center> <h1>Локальная погрешность</h1>   </center>
+        <div class="row-fluid">
+            <div class="span6">
+                <div id="chart5"></div>
+
+            </div>
+            <div class="span6">
+                <div id="grid5" style="height: 380px"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <center><h1 id="first" style="display: none">Метод Эйлера</h1></center>
+    <div class="row-fluid">
+
+        <div class="span6">
+             <div id="chart"></div>
+        </div>
+
+        <div class="span6">
+            <div id="grid" style="height: 380px"></div>
+        </div>
+     </div>
+    <hr>
+    <center><h1 id="second" style="display: none">Усовершенствованный метод Эйлера</h1></center>
+    <div class="row-fluid">
+        <div class="span6">
+            <div id="chart2"> </div>
+        </div>
+
+        <div class="span6">
+            <div id="grid2" style="height: 380px"></div>
+        </div>
+
+    </div>
+    <hr>
+    <center><h1 id="third" style="display: none">Метод Коши-Эйлера</h1></center>
+    <div class="row-fluid">
+        <div class="span6">
+            <div id="chart3"></div>
+        </div>
+        <div class="span6">
+            <div id="grid3" style="height: 380px"></div>
+        </div>
+
+    </div>
+    <hr>
+
+
+
+
+
+
+
+
+
+    <div id="dbgrid">
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+</div>
+
+</body>
+</html>
